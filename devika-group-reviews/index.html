@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Devika Group Review | Transparency, Trust & Performance</title>
+    <meta name="description" content="In-depth Devika Group Review. Explore our 70-year legacy, construction quality, and investor perspectives on Delhi's commercial real estate.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #1a2b56; 
+            --accent-red: #e63946;   
+            --deep-navy: #0b132b;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --text-gray: #4a5568;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.8; background-color: var(--white); overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* --- Navigation (Global) --- */
+        nav {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 1rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+        }
+        .logo-box svg { height: 55px; width: auto; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links a { color: var(--primary-blue); font-size: 1.2rem; transition: 0.3s; text-decoration: none;}
+        .nav-links a:hover { color: var(--accent-red); }
+        .btn-portal { background: var(--accent-red); color: white !important; padding: 0.6rem 1.5rem; border-radius: 4px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-left: 15px; text-decoration: none;}
+
+        /* --- Review Hero --- */
+        .review-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(26, 43, 86, 0.85), rgba(26, 43, 86, 0.85)), 
+                        url('https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+        .review-hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem; }
+
+        /* --- Section Styling --- */
+        section { padding: 7rem 10%; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .header-line { width: 70px; height: 4px; background: var(--accent-red); margin: 1.2rem auto; }
+        
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .depth-text h3 { font-size: 2.2rem; color: var(--primary-blue); margin-bottom: 1.5rem; }
+        .depth-text p { margin-bottom: 1.2rem; color: var(--text-gray); font-size: 1.05rem; }
+
+        .img-frame { border-radius: 15px; overflow: hidden; box-shadow: 20px 20px 0 var(--primary-blue); }
+        .img-frame img { width: 100%; display: block; }
+
+        /* --- Evaluation Cards --- */
+        .eval-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .eval-card {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .eval-card:hover { transform: translateY(-10px); background: white; box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+        .eval-card i { color: var(--accent-red); font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .eval-card h4 { color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.2rem; }
+
+        /* --- Note/Disclaimer --- */
+        .note-box {
+            background: #fff5f5;
+            border-left: 6px solid var(--accent-red);
+            padding: 3rem;
+            border-radius: 0 15px 15px 0;
+            margin-top: 5rem;
+        }
+        .note-box ul { list-style: none; padding-top: 1.5rem; }
+        .note-box li { margin-bottom: 1rem; font-weight: 600; display: flex; align-items: center; }
+        .note-box li::before { content: "✓"; color: var(--accent-red); margin-right: 15px; font-weight: 900; }
+
+        /* --- Global Footer --- */
+        footer { background: var(--deep-navy); color: var(--white); padding: 7rem 10% 2rem; }
+        .footer-main { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 5rem; margin-bottom: 5rem; }
+        .footer-socials { display: flex; gap: 1.2rem; margin-top: 2rem; }
+        .footer-socials a { color: white; background: rgba(255,255,255,0.08); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
+        .footer-socials a:hover { background: var(--accent-red); }
+
+        @media (max-width: 900px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr; text-align: center; }
+            .footer-socials { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-box">
+            <svg width="220" height="55" viewBox="0 0 300 60">
+                <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">D</text>
+                <rect x="45" y="15" width="40" height="8" fill="#1a2b56"/>
+                <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
+                <rect x="45" y="39" width="40" height="8" fill="#1a2b56"/>
+                <text x="95" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">VIKA</text>
+            </svg>
+        </div>
+        <div class="nav-links">
+            <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://in.pinterest.com/digitaldevika/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://devikasadarbazaar.com/" target="_blank" class="btn-portal">Visit Project</a>
+        </div>
+    </nav>
+
+    <header class="review-hero">
+        <h1 data-aos="fade-down">Devika Group Review</h1>
+        <p data-aos="fade-up" style="max-width: 800px; padding: 0 5%;">Analyzing reputation, project quality, and customer experience in Indian commercial real estate.</p>
+    </header>
+
+    <section>
+        <div class="grid-2">
+            <div class="depth-text" data-aos="fade-right">
+                <h3>Developer Overview</h3>
+                <p>A Devika Group Review helps potential buyers and investors understand the developer’s reputation, project quality, and overall customer experience. Devika Group is an Indian real estate developer known for commercial and mixed-use developments, particularly in key urban markets like Delhi.</p>
+                <p>Reviews generally focus on aspects such as location, planning, usability, and long-term value. These factors play a major role in decision-making, especially in the high-stakes world of commercial real estate.</p>
+            </div>
+            <div class="img-frame" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1000" alt="Corporate Office Analysis">
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--light-bg);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>What Customers Typically Look For</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="eval-grid">
+            <div class="eval-card" data-aos="fade-up">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Location & Connectivity</h4>
+                <p>Assessing how project placement drives long-term business accessibility.</p>
+            </div>
+            <div class="eval-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-tools"></i>
+                <h4>Construction Quality</h4>
+                <p>Evaluating planning, materials, and architectural sustainability.</p>
+            </div>
+            <div class="eval-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-handshake"></i>
+                <h4>Transparency</h4>
+                <p>Clarity in documentation and communication during the purchase process.</p>
+            </div>
+            <div class="eval-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-chart-line"></i>
+                <h4>Long-term Value</h4>
+                <p>The potential for ROI and functional usability over decades.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-2">
+            <div class="img-frame" data-aos="fade-right" style="box-shadow: -20px 20px 0 var(--accent-red);">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" alt="Building Construction">
+            </div>
+            <div class="depth-text" data-aos="fade-left">
+                <h3>Strengths & Business Experience</h3>
+                <p>Many Devika Group Review discussions highlight practical aspects of their developments. Projects are often planned to suit real-world usage rather than just visual appeal. This is particularly important for commercial spaces where accessibility and movement directly affect business performance.</p>
+                <p>From a business perspective, reviews often reflect how functional the space is. Users typically value organized layouts that improve customer movement and structured infrastructure compared to traditional, chaotic markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--deep-navy); color: white;">
+        <div class="grid-2">
+            <div class="depth-text" data-aos="fade-up">
+                <h3 style="color: white;">The Investor Perspective</h3>
+                <p style="color: rgba(255,255,255,0.8);">Investors reviewing Devika Group projects usually focus on stability and location advantage. Commercial properties in established markets tend to attract steady demand. Reviews suggest that projects developed in high-footfall areas can offer rental potential, depending on market conditions.</p>
+                <p style="color: rgba(255,255,255,0.8);">Trust is a cornerstone. Buyers generally prefer developers who provide clear communication and structured processes. While experiences may differ, transparency in documentation is a key factor influencing overall satisfaction.</p>
+            </div>
+            <div class="depth-text" data-aos="fade-up" data-aos-delay="200">
+                <h3 style="color: white;">Final Thoughts</h3>
+                <p style="color: rgba(255,255,255,0.8);">The focus on location-driven projects and functional design is often appreciated, especially in commercial developments. However, returns are influenced by location trends and market performance. Conduct due diligence and verify information from official sources before making a decision.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="note-box" data-aos="zoom-in">
+            <h3>Important Note for Buyers</h3>
+            <p>This content is for informational purposes only. To make a secure and informed investment, we strictly recommend:</p>
+            <ul>
+                <li>Verify all project details from official developer sources.</li>
+                <li>Check legal approvals and RERA registration numbers.</li>
+                <li>Visit the project location and site office personally before investing.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-main">
+            <div>
+                <svg width="200" height="50" viewBox="0 0 300 60">
+                    <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">D</text>
+                    <rect x="45" y="15" width="40" height="8" fill="#ffffff"/>
+                    <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
+                    <rect x="45" y="39" width="40" height="8" fill="#ffffff"/>
+                    <text x="95" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">VIKA</text>
+                </svg>
+                <p style="opacity: 0.7; margin-top: 1.5rem; font-size: 0.9rem;">A 70-year legacy of building trust, delivering excellence, and transforming the commercial skyline of India.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://in.pinterest.com/digitaldevika/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 2rem; color: var(--accent-red);">RESOURCES</h4>
+                <ul style="list-style: none; opacity: 0.8; font-size: 0.9rem; line-height: 2.5;">
+                    <li><a href="https://devikasadarbazaar.com/" style="color:white; text-decoration:none;">Main Project Page</a></li>
+                    <li>Investor Checklist</li>
+                    <li>Quality Standards</li>
+                    <li>Legacy & Trust</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 2rem; color: var(--accent-red);">CORPORATE HQ</h4>
+                <p style="opacity: 0.8; font-size: 0.9rem; line-height: 1.8;">
+                    Devika Tower 6, Lala Lajpat Rai Road,<br>
+                    Nehru Place, New Delhi – 110019<br><br>
+                    <strong>Global Presence:</strong> Delhi | Dubai | London
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem; font-size: 0.85rem; opacity: 0.5;">
+            &copy; 2026 DEVIKA GROUP. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+</body>
+</html>
