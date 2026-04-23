@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devika Group | 70 Years of Real Estate Excellence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #1a2b56; 
+            --accent-red: #e63946;   
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-gray: #555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.7;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 1rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .logo-box svg {
+            height: 50px;
+            width: auto;
+        }
+
+        .social-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-nav a {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .social-nav a:hover {
+            color: var(--accent-red);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 80px 10% 0;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 900px;
+            font-weight: 300;
+        }
+
+        /* --- Stats Ribbon --- */
+        .stats-ribbon {
+            background: var(--primary-blue);
+            padding: 5rem 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .stat-box h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* --- Global Section Styles --- */
+        section {
+            padding: 8rem 10%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .header-line {
+            width: 80px;
+            height: 4px;
+            background: var(--accent-red);
+            margin: 1.5rem auto;
+        }
+
+        /* --- Content Layouts --- */
+        .content-flex {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+        }
+
+        .content-text { flex: 1.2; }
+        .content-img {
+            flex: 0.8;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 20px 20px 0 var(--primary-blue);
+        }
+        .content-img img { width: 100%; display: block; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .checklist {
+            list-style: none;
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        .checklist li {
+            margin-bottom: 0.8rem;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: var(--accent-red);
+            position: absolute;
+            left: 0;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #0b132b;
+            color: #ffffff;
+            padding: 5rem 10% 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-socials a {
+            color: white;
+            background: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .footer-socials a:hover {
+            background: var(--accent-red);
+        }
+
+        @media (max-width: 1024px) {
+            .content-flex { flex-direction: column; text-align: center; }
+            .hero h1 { font-size: 3rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-box">
+            <svg width="200" height="50" viewBox="0 0 300 60">
+                <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">D</text>
+                <rect x="45" y="15" width="40" height="8" fill="#1a2b56"/>
+                <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
+                <rect x="45" y="39" width="40" height="8" fill="#1a2b56"/>
+                <text x="95" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">VIKA</text>
+            </svg>
+        </div>
+        <div class="social-nav">
+            <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/devikagroup" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@devikagroup8503?reload=9" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://in.pinterest.com/digitaldevika/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 data-aos="fade-up">Devika Group</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Building Modern Spaces with Legacy, Trust, and Innovation. Shaping the future of urban living through quality, innovation, and long-term value creation.</p>
+    </header>
+
+    <div class="stats-ribbon">
+        <div class="stat-box" data-aos="fade-up">
+            <h2>70+</h2>
+            <p>Years of Legacy</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+            <h2>36+</h2>
+            <p>Projects Delivered</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+            <h2>6M+</h2>
+            <p>Sq. Ft. Developed</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+            <h2>11,000+</h2>
+            <p>Happy Customers</p>
+        </div>
+    </div>
+
+    <section class="content-flex" style="background-color: var(--light-bg);">
+        <div class="content-text" data-aos="fade-right">
+            <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                <h2>A Legacy of Three Generations</h2>
+                <div class="header-line" style="margin: 0 0 1.5rem 0;"></div>
+            </div>
+            <p>Devika Group is a well-established name in the real estate sector, known for combining a legacy of over 70 years with modern development practices. One of the defining aspects of the group is its strong leadership foundation, bringing deep industry knowledge and stability through three generations of experience. This continuity allows the group to maintain consistent quality while successfully adapting to modern trends by combining traditional values with contemporary strategies.</p>
+        </div>
+        <div class="content-img" data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000" alt="Corporate Office Building">
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Landmarks & Intelligent Design</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="grid-container">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-building fa-3x mb-4" style="color: var(--primary-blue);"></i>
+                <h3>Urban Landmarks</h3>
+                <p>Specializing in high-quality commercial and office spaces in key hubs like Delhi, focusing on environments that enhance business performance and user experience.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                <i class="fas fa-leaf fa-3x mb-4" style="color: var(--primary-blue);"></i>
+                <h3>Green Development</h3>
+                <p>An early pioneer in "Green Building" concepts, integrating eco-friendly techniques and efficient resource usage long before sustainability became a trend.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-drafting-table fa-3x mb-4" style="color: var(--primary-blue);"></i>
+                <h3>Smart Planning</h3>
+                <p>Prioritizing efficient layouts, strategic accessibility, modern architecture, and future-ready planning to ensure a seamless experience for users and investors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--light-bg);">
+        <div class="content-flex">
+            <div class="content-img" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" alt="Modern Architecture">
+            </div>
+            <div class="content-text" data-aos="fade-left">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2>Commercial Presence & Investment Potential</h2>
+                    <div class="header-line" style="margin: 0 0 1.5rem 0;"></div>
+                </div>
+                <p>Devika Group has a strong presence in commercial real estate, offering ecosystems where businesses can grow. These projects provide high visibility for retail, efficient office layouts, and well-planned infrastructure. Investing in a Devika Group project offers key advantages:</p>
+                <ul class="checklist">
+                    <li><strong>Stable Returns:</strong> Consistent demand for well-planned spaces.</li>
+                    <li><strong>Location Advantage:</strong> Projects situated in high-growth areas.</li>
+                    <li><strong>Long-Term Appreciation:</strong> Value increases with infrastructure development.</li>
+                    <li><strong>Trusted Brand:</strong> A reputation built on decades of customer trust.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header" data-aos="fade-up">
+            <h2>A Foundation Built on Trust</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="content-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>In real estate, trust is everything. Devika Group focuses on maintaining transparency and strong customer relationships from the first inquiry to project completion. This customer-centric approach, combined with a proven track record of 36+ successfully delivered projects, ensures that the focus remains on long-term satisfaction rather than just selling properties.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <svg width="180" height="45" viewBox="0 0 300 60">
+                    <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">D</text>
+                    <rect x="45" y="15" width="40" height="8" fill="#ffffff"/>
+                    <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
+                    <rect x="45" y="39" width="40" height="8" fill="#ffffff"/>
+                    <text x="95" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">VIKA</text>
+                </svg>
+                <p style="opacity: 0.7; margin-top: 1.5rem; font-size: 0.9rem;">Successfully combining rich legacy with modern development practices to shape the future of urban living.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://devikagroup.com/" target="_blank"><i class="fab fa-website"></i></a>
+                    <a href="https://youtube.com/@devikagroup8503?reload=9" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://in.pinterest.com/digitaldevika/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-red);">QUICK LINKS</h4>
+                <ul style="list-style: none; opacity: 0.7; font-size: 0.85rem; line-height: 2;">
+                    <li>70+ Years Real Estate Legacy</li>
+                    <li>36+ Successfully Delivered Projects</li>
+                    <li>6+ Million Sq. Ft. Developed</li>
+                    <li>11,000+ Happy Customers</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-red);">CORE FOCUS</h4>
+                <ul style="list-style: none; opacity: 0.7; font-size: 0.85rem; line-height: 2;">
+                    <li>Commercial & Office Spaces</li>
+                    <li>Green & Sustainable Development</li>
+                    <li>Smart & Practical Planning</li>
+                    <li>Customer-Centric Transparency</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.8rem; opacity: 0.5;">
+            &copy; 2024 Devika Group. Building properties, shaping futures.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
+
