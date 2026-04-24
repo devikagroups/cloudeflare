@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devika Vibe 110 | The Future of Experiential Retail in Noida</title>
+    <title>Devika Vibe 110 | Lifestyle & Retail Destination in Noida</title>
     
-    <meta name="description" content="Detailed analysis of Devika Vibe 110, Sector 110 Noida. A 75,000 sq. ft. lifestyle destination featuring 150+ shops and a massive open-air entertainment zone.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,15 +14,14 @@
             --primary-blue: #1a2b56; 
             --accent-red: #e63946;   
             --deep-navy: #0b132b;
-            --light-bg: #f4f7f9;
+            --light-bg: #f8fafc;
             --white: #ffffff;
             --text-gray: #4a5568;
-            --gold: #c5a059;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.8; background-color: var(--white); overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 
         /* --- Navigation --- */
         nav {
@@ -36,19 +34,17 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
-        .logo-box svg { height: 50px; }
-        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
-        .nav-links a { color: var(--primary-blue); font-size: 1.1rem; text-decoration: none; transition: 0.3s; }
+        .logo-box svg { height: 45px; }
+        .nav-links a { color: var(--primary-blue); font-size: 1.1rem; text-decoration: none; margin-left: 20px; transition: 0.3s; }
         .nav-links a:hover { color: var(--accent-red); }
-        .btn-cta { background: var(--accent-red); color: white !important; padding: 0.7rem 1.8rem; border-radius: 4px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
 
         /* --- Hero --- */
-        .vibe-hero {
-            height: 90vh;
-            background: linear-gradient(rgba(11, 19, 43, 0.7), rgba(11, 19, 43, 0.7)), 
-                        url('https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&q=80&w=2000');
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(26, 43, 86, 0.7), rgba(26, 43, 86, 0.7)), 
+                        url('https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -57,53 +53,47 @@
             align-items: center;
             text-align: center;
             color: var(--white);
-            padding: 0 10%;
+            padding-top: 80px;
         }
-        .vibe-hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); margin-bottom: 1rem; }
-        .vibe-hero p { font-size: 1.4rem; max-width: 900px; font-weight: 300; line-height: 1.5; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; max-width: 800px; font-weight: 300; }
 
-        /* --- Global Sections --- */
-        section { padding: 8rem 10%; }
-        .section-header { text-align: center; margin-bottom: 5rem; }
-        .section-header h2 { font-size: 3rem; color: var(--primary-blue); }
-        .header-line { width: 100px; height: 5px; background: var(--accent-red); margin: 1.5rem auto; }
+        /* --- Content Sections --- */
+        section { padding: 6rem 10%; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .header-line { width: 60px; height: 4px; background: var(--accent-red); margin: 1.5rem auto; }
         
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
-        .depth-text h3 { font-size: 2.5rem; color: var(--primary-blue); margin-bottom: 2rem; border-left: 6px solid var(--accent-red); padding-left: 20px; }
-        .depth-text p { margin-bottom: 1.5rem; font-size: 1.15rem; color: var(--text-gray); text-align: justify; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .depth-text h3 { font-size: 2.2rem; color: var(--primary-blue); margin-bottom: 1.5rem; }
+        .depth-text p { margin-bottom: 1.2rem; color: var(--text-gray); }
 
-        .img-frame { border-radius: 20px; overflow: hidden; box-shadow: 30px 30px 0 var(--light-bg); border: 1px solid #ddd; }
+        .img-frame { border-radius: 15px; overflow: hidden; box-shadow: 20px 20px 0 var(--primary-blue); }
         .img-frame img { width: 100%; display: block; }
 
-        /* --- Stat Bar --- */
-        .stat-bar { background: var(--deep-navy); padding: 5rem 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center; }
-        .stat-item h2 { color: var(--gold); font-size: 3.5rem; margin-bottom: 0.5rem; }
-        .stat-item p { color: white; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; opacity: 0.7; }
+        /* --- Project Highlights --- */
+        .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .h-card { background: var(--light-bg); padding: 2.5rem; border-radius: 10px; text-align: center; transition: 0.3s; }
+        .h-card:hover { transform: translateY(-5px); background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .h-card i { color: var(--accent-red); font-size: 2rem; margin-bottom: 1rem; }
+        .h-card h4 { color: var(--primary-blue); font-size: 1.1rem; }
 
-        /* --- Feature Grid --- */
-        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
-        .f-card { background: var(--white); padding: 4rem 3rem; border: 1px solid #eee; transition: 0.4s; border-radius: 15px; }
-        .f-card:hover { transform: translateY(-15px); box-shadow: 0 30px 60px rgba(0,0,0,0.1); border-color: var(--accent-red); }
-        .f-card i { font-size: 3.5rem; color: var(--accent-red); margin-bottom: 2rem; }
-        .f-card h4 { font-size: 1.5rem; color: var(--primary-blue); margin-bottom: 1rem; }
+        /* --- Location List --- */
+        .conn-list { list-style: none; margin-top: 20px; }
+        .conn-list li { padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 600; color: var(--primary-blue); }
+        .conn-list span { color: var(--accent-red); float: right; }
 
-        /* --- Connectivity List --- */
-        .conn-list { list-style: none; margin-top: 2rem; }
-        .conn-list li { display: flex; align-items: center; margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 600; color: var(--primary-blue); }
-        .conn-list i { background: var(--accent-red); color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 15px; font-size: 0.9rem; }
+        /* --- Contact Box --- */
+        .contact-box { background: var(--deep-navy); color: white; padding: 4rem; border-radius: 15px; margin-top: 4rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; }
 
         /* --- Footer --- */
-        footer { background: var(--deep-navy); color: var(--white); padding: 7rem 10% 2rem; }
-        .footer-main { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 5rem; margin-bottom: 5rem; }
-        .footer-socials { display: flex; gap: 1.5rem; margin-top: 2.5rem; }
-        .footer-socials a { color: white; font-size: 1.5rem; transition: 0.3s; opacity: 0.6; }
-        .footer-socials a:hover { color: var(--accent-red); opacity: 1; }
+        footer { background: var(--deep-navy); color: var(--white); padding: 5rem 10% 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+        .footer-socials a { color: white; font-size: 1.3rem; margin-right: 20px; opacity: 0.7; transition: 0.3s; }
+        .footer-socials a:hover { opacity: 1; color: var(--accent-red); }
 
-        @media (max-width: 1024px) {
-            .grid-2 { grid-template-columns: 1fr; gap: 3rem; }
-            .vibe-hero h1 { font-size: 3rem; }
-            .footer-main { grid-template-columns: 1fr; text-align: center; }
-            .footer-socials { justify-content: center; }
+        @media (max-width: 900px) {
+            .grid-2 { grid-template-columns: 1fr; text-align: center; }
+            .img-frame { order: -1; }
         }
     </style>
 </head>
@@ -111,7 +101,7 @@
 
     <nav>
         <div class="logo-box">
-            <svg width="220" height="55" viewBox="0 0 300 60">
+            <svg width="200" height="50" viewBox="0 0 300 60">
                 <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">D</text>
                 <rect x="45" y="15" width="40" height="8" fill="#1a2b56"/>
                 <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
@@ -123,141 +113,173 @@
             <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://in.pinterest.com/digitaldevika/" target="_blank" class="btn-cta">Visit Site</a>
         </div>
     </nav>
 
-    <header class="vibe-hero">
-        <h1 data-aos="fade-down">DEVIKA VIBE 110</h1>
-        <p data-aos="fade-up">An Institutional Grade Lifestyle Hub: Reimagining Retail, Culinary Arts, and Experiential Engagement in Sector 110, Noida.</p>
+    <header class="hero">
+        <h1 data-aos="fade-down">Devika Vibe 110</h1>
+        <p data-aos="fade-up">A Premium Lifestyle & Retail Destination in Noida</p>
     </header>
-
-    <div class="stat-bar">
-        <div class="stat-item" data-aos="zoom-in"><h2>75K</h2><p>Development Area (Sq. Ft)</p></div>
-        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100"><h2>150+</h2><p>Premium Retail Units</p></div>
-        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200"><h2>1.3L+</h2><p>Projected Monthly Footfall</p></div>
-        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300"><h2>50+</h2><p>Anchor Brands</p></div>
-    </div>
 
     <section>
         <div class="grid-2">
             <div class="depth-text" data-aos="fade-right">
-                <h3>Architectural Vision & Urban Synergy</h3>
-                <p>Devika Vibe 110 is engineered to transcend the traditional commercial mall concept, positioning itself as a high-street lifestyle ecosystem. Spanning a significant development area of 75,000 sq. ft., the project is an architectural response to the evolving consumer demand for "Experiential Retail." Every square foot is meticulously planned to optimize human circulation and maximize storefront visibility.</p>
-                <p>Unlike standard commercial blocks, Vibe 110 integrates wide, airy corridors with a structured vertical layout, ensuring that all 150+ retail units enjoy equitable exposure to high-velocity footfalls. It is an environment where global aesthetics meet local commercial energy, creating a resilient asset class for investors and business owners alike.</p>
+                <h3>Overview</h3>
+                <p>Devika Vibe 110 is a modern commercial hub designed to deliver a complete lifestyle experience in Noida. Spread across approximately 75,000 sq. ft., this development brings together luxury retail, curated dining, and immersive entertainment in one vibrant destination.</p>
+                <p>With over 1.3 lakh footfalls, 150+ shops, and 50+ brands, Vibe 110 is built to be more than just a shopping space. It is a destination where people come to explore, relax, and engage. Every element of the project is designed to create a dynamic environment that appeals to modern consumers.</p>
             </div>
             <div class="img-frame" data-aos="fade-left">
-                <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&q=80&w=1200" alt="Modern Luxury Mall Interior">
+                <img src="https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&q=80&w=1000" alt="Vibe 110 Lifestyle Hub">
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--light-bg);">
+        <div class="grid-2">
+            <div class="img-frame" data-aos="fade-right" style="box-shadow: -20px 20px 0 var(--accent-red);">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000" alt="Retail Experience">
+            </div>
+            <div class="depth-text" data-aos="fade-left">
+                <h3>Retail Experience at Vibe 110</h3>
+                <p>The retail spaces at Devika Vibe 110 are thoughtfully curated to offer a balanced mix of global trends and local charm. The project brings together a wide variety of brands, creating a space where shoppers can explore fashion, accessories, and lifestyle products in one place.</p>
+                <p>From well-known labels to emerging designers, the retail environment is designed to cater to diverse preferences. The layout ensures smooth movement, better visibility, and an engaging shopping experience for visitors. This makes it an ideal destination for both brands and customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Lifestyle & Engagement</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="grid-2">
+            <div class="depth-text" data-aos="fade-up">
+                <h4>Dining: A Curated Culinary Journey</h4>
+                <p>Dining at Vibe 110 goes beyond just food—it is about experience. The space offers a diverse range of culinary options, from classic favorites to international cuisines and innovative fusion dishes.</p>
+                <p>Each dining outlet is designed to create a unique atmosphere, allowing visitors to enjoy not just meals but memorable moments. Whether it’s casual dining or a relaxed outing with friends and family, the environment encourages people to spend more time and explore different flavors.</p>
+            </div>
+            <div class="depth-text" data-aos="fade-up" data-aos-delay="100">
+                <h4>Entertainment That Engages</h4>
+                <p>Entertainment is a key highlight of Devika Vibe 110. The project features an open-air entertainment zone, designed to host large-scale experiences and live events.</p>
+                <p>This space includes one of the biggest live screens in Noida, making it suitable for sports screenings, performances, and movie experiences. The combination of open-air design and modern infrastructure creates an engaging atmosphere where visitors can enjoy leisure and entertainment in a unique setting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--light-bg);">
+        <div class="grid-2">
+            <div class="depth-text" data-aos="fade-right">
+                <h3>Kids Play Area: A Space for Joy and Learning</h3>
+                <p>The kids play area at Vibe 110 is designed with safety and engagement in mind. It offers a vibrant and interactive environment where children can explore, play, and learn.</p>
+                <p>With colorful interiors, playful structures, and a variety of activities such as slides, swings, and soft play zones, the space caters to children of different age groups. It ensures that families visiting the mall have a complete and enjoyable experience.</p>
+            </div>
+            <div class="img-frame" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1566454544257-ec2188f96ec1?auto=format&fit=crop&q=80&w=1000" alt="Kids Play Area">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid-2">
+            <div class="depth-text" data-aos="fade-up">
+                <h3>Strategic Location Advantage</h3>
+                <p>One of the strongest aspects of Devika Vibe 110 is its prime location in Sector 110, Noida. The project is surrounded by residential communities, educational institutions, and commercial hubs, ensuring a steady flow of visitors.</p>
+                <ul class="conn-list">
+                    <li>Mahamaya Flyover <span>5 to 7 minutes</span></li>
+                    <li>Metro Station <span>5 to 7 minutes</span></li>
+                    <li>Greater Noida Expressway <span>1 to 3 minutes</span></li>
+                    <li>Yatharth Hospital <span>0 to 1 minute</span></li>
+                </ul>
+                <p style="margin-top: 20px;">This strategic positioning enhances accessibility and contributes to consistent footfall, making it a convenient destination for both daily needs and leisure activities.</p>
+            </div>
+            <div class="depth-text" data-aos="fade-up" data-aos-delay="200">
+                <h3>About Devika Group</h3>
+                <p>Devika Group is known for its commitment to quality development and sustainable practices. With a focus on creating functional and future-ready spaces, the group has established itself as a reliable name in the real estate sector.</p>
+                <p>Their approach combines innovation with responsibility, ensuring that every project is built with attention to detail and long-term value. Devika Vibe 110 reflects this vision by offering a well-planned environment that meets modern lifestyle and business needs.</p>
             </div>
         </div>
     </section>
 
     <section style="background: var(--light-bg);">
         <div class="section-header" data-aos="fade-up">
-            <h2>The Four Pillars of Engagement</h2>
+            <h2>Project Highlights</h2>
             <div class="header-line"></div>
         </div>
-        <div class="feature-grid">
-            <div class="f-card" data-aos="fade-up">
-                <i class="fas fa-shopping-bag"></i>
-                <h4>Curated Retail Mix</h4>
-                <p>A balanced portfolio of 50+ global and domestic brands, meticulously zoned to increase visitor "dwell time" and maximize conversion rates for every shop owner.</p>
+        <div class="highlights-grid">
+            <div class="h-card" data-aos="zoom-in">
+                <i class="fas fa-expand-arrows-alt"></i>
+                <h4>75,000 sq. ft.</h4>
+                <p>Development Area</p>
             </div>
-            <div class="f-card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-utensils"></i>
-                <h4>Culinary Excellence</h4>
-                <p>A destination-within-a-destination. From high-end fine dining to artisanal cafes, our F&B strategy drives high-frequency repeat visits throughout the day.</p>
+            <div class="h-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-building"></i>
+                <h4>80,000 sq. ft.</h4>
+                <p>Leasable Space</p>
             </div>
-            <div class="f-card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-theater-masks"></i>
-                <h4>Immersive Entertainment</h4>
-                <p>Featuring one of Noida's largest live screens and a dedicated open-air zone for live performances, sports screenings, and community cultural events.</p>
+            <div class="h-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-store"></i>
+                <h4>150+ Shops</h4>
+                <p>Retail Units</p>
+            </div>
+            <div class="h-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-users"></i>
+                <h4>1.3 Lakh+</h4>
+                <p>Footfall Potential</p>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="grid-2">
-            <div class="img-frame" data-aos="fade-right" style="box-shadow: -30px 30px 0 var(--gold);">
-                <img src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?auto=format&fit=crop&q=80&w=1200" alt="High-End Commercial Exterior">
+        <div class="contact-box" data-aos="fade-up">
+            <div class="contact-grid">
+                <div>
+                    <h4 style="color: var(--accent-red); margin-bottom: 1rem;">Site Office Address</h4>
+                    <p>Plot No: GH-05, Near Yatharth Hospital, Sector 110, Noida, Uttar Pradesh – 201304</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-red); margin-bottom: 1rem;">Corporate Office</h4>
+                    <p>7/13/2, S/F Devika Tower, Nehru Place Road, Nehru Place, New Delhi – 110019</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-red); margin-bottom: 1rem;">Contact Details</h4>
+                    <p>Phone: +91 18002123547</p>
+                </div>
             </div>
-            <div class="depth-text" data-aos="fade-left">
-                <h3>The Connectivity Benchmark</h3>
-                <p>The commercial viability of Vibe 110 is underpinned by its position in the "Golden Quadrant" of Sector 110, Noida. Surrounded by high-density, affluent residential catchments, the project secures a permanent audience of retail-hungry consumers.</p>
-                <ul class="conn-list">
-                    <li><i class="fas fa-road"></i> 1-3 Mins from Greater Noida Expressway</li>
-                    <li><i class="fas fa-hospital"></i> 0-1 Min from Yatharth Hospital</li>
-                    <li><i class="fas fa-subway"></i> 5-7 Mins from Major Metro Interchanges</li>
-                    <li><i class="fas fa-plane"></i> Strategic access to upcoming Jewar Airport</li>
-                </ul>
-                <p>This strategic positioning enhances accessibility and contributes to consistent, multi-generational footfall, making it a convenient destination for both daily needs and luxury leisure activities.</p>
-            </div>
-        </div>
-    </section>
-
-    <section style="background: var(--primary-blue); color: white;">
-        <div class="grid-2">
-            <div class="depth-text">
-                <h3 style="color: white; border-color: var(--gold);">Devika Legacy of Excellence</h3>
-                <p style="color: rgba(255,255,255,0.8);">Devika Group is known for its commitment to quality development and sustainable practices. With a focus on creating functional and future-ready spaces, the group has established itself as a reliable name in the real estate sector for over 70 years. Vibe 110 reflects this vision by offering a well-planned environment that meets modern lifestyle and business needs.</p>
-            </div>
-            <div class="depth-text">
-                <h4 style="color: var(--gold); margin-bottom: 1.5rem;">Site & Corporate Contact</h4>
-                <p style="color: white; font-size: 0.95rem; opacity: 0.9;">
-                    <strong>Site:</strong> Plot No: GH-05, Near Yatharth Hospital, Sector 110, Noida, UP<br>
-                    <strong>Corporate:</strong> 7/13/2, S/F Devika Tower, Nehru Place Road, New Delhi<br><br>
-                    <span style="font-size: 1.5rem; font-weight: 700; color: var(--accent-red);">+91 18002123547</span>
-                </p>
+            <div style="margin-top: 4rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+                <h3>Conclusion</h3>
+                <p style="opacity: 0.8; margin-top: 1rem;">Devika Vibe 110 brings together retail, dining, entertainment, and family experiences into a single, well-planned destination. Its strategic location, diverse offerings, and modern infrastructure make it a strong choice for visitors, businesses, and investors alike. Whether you are looking to shop, dine, or spend quality time, Vibe 110 offers an environment that is engaging, convenient, and designed for today’s lifestyle.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-main">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
             <div>
-                <svg width="200" height="50" viewBox="0 0 300 60">
+                <svg width="150" height="40" viewBox="0 0 300 60">
                     <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">D</text>
                     <rect x="45" y="15" width="40" height="8" fill="#ffffff"/>
                     <rect x="45" y="27" width="40" height="8" fill="#e63946"/>
                     <rect x="45" y="39" width="40" height="8" fill="#ffffff"/>
                     <text x="95" y="45" font-family="Arial Black" font-size="50" fill="#ffffff">VIKA</text>
                 </svg>
-                <p style="opacity: 0.6; margin-top: 1.5rem;">Transforming the urban skyline through functional luxury and architectural integrity for over seven decades.</p>
-                <div class="footer-socials">
-                    <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
             </div>
-            <div>
-                <h4 style="color: var(--accent-red); margin-bottom: 2rem;">RESOURCES</h4>
-                <ul style="list-style: none; opacity: 0.7; font-size: 0.9rem; line-height: 2.5;">
-                    <li>Brand Directory</li>
-                    <li>Leasing Opportunities</li>
-                    <li>Investor Relations</li>
-                    <li>Site Map</li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="color: var(--accent-red); margin-bottom: 2rem;">GLOBAL HQ</h4>
-                <p style="opacity: 0.7; font-size: 0.9rem;">
-                    Delhi | Dubai | London<br><br>
-                    Nehru Place, New Delhi – 110019<br>
-                    Email: info@devikagroup.com
-                </p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem; font-size: 0.8rem; opacity: 0.4;">
+        <div style="text-align: center; margin-top: 3rem; font-size: 0.8rem; opacity: 0.5;">
             &copy; 2026 DEVIKA GROUP. ALL RIGHTS RESERVED.
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1500, once: true });
+        AOS.init({ duration: 1200, once: true });
     </script>
 </body>
 </html>
+
 
