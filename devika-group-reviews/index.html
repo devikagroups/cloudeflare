@@ -39,10 +39,37 @@
             box-shadow: 0 4px 30px rgba(0,0,0,0.07);
         }
         .logo-box svg { height: 55px; width: auto; }
-        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
-        .nav-links a { color: var(--primary-blue); font-size: 1.2rem; transition: 0.3s; text-decoration: none;}
+         .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links a { color: var(--primary-blue); font-size: 1.1rem; font-weight: 600; text-decoration:none; transition: 0.3s; position: relative; }
         .nav-links a:hover { color: var(--accent-red); }
+        .nav-links a.active { color: var(--accent-red); }
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-red);
+            border-radius: 2px;
+        }
         .btn-portal { background: var(--accent-red); color: white !important; padding: 0.6rem 1.5rem; border-radius: 4px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-left: 15px; text-decoration: none;}
+        
+        .social-nav {
+            display: flex;
+            gap: 1.5rem;
+            margin-left: 3rem;
+        }
+        
+        .social-nav a {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+        
+        .social-nav a:hover {
+            color: var(--accent-red);
+        }
 
         /* --- Review Hero --- */
         .review-hero {
@@ -105,7 +132,12 @@
         .footer-socials a { color: white; background: rgba(255,255,255,0.08); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; }
         .footer-socials a:hover { background: var(--accent-red); }
 
-        @media (max-width: 900px) {
+         @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .social-nav { display: none; }
+         }
+         
+         @media (max-width: 900px) {
             .grid-2 { grid-template-columns: 1fr; }
             .footer-main { grid-template-columns: 1fr; text-align: center; }
             .footer-socials { justify-content: center; }
@@ -114,7 +146,7 @@
 </head>
 <body>
 
-    <nav>
+     <nav>
         <div class="logo-box">
             <svg width="220" height="55" viewBox="0 0 300 60">
                 <text x="0" y="45" font-family="Arial Black" font-size="50" fill="#1a2b56">D</text>
@@ -125,12 +157,18 @@
             </svg>
         </div>
         <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="index.html" class="active">Reviews</a>
+            <a href="../devika-sadar-bazar-delhi/">Sadar Bazar</a>
+            <a href="../devika-vibe-110/">Vibe 110</a>
+            <a href="https://devikasadarbazaar.com/" target="_blank" class="btn-portal">Visit Project</a>
+        </div>
+        <div class="social-nav">
             <a href="https://www.facebook.com/devikagroupIN" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/devikagroup/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/company/devikagroup" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.youtube.com/@devikagroup8503" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://in.pinterest.com/digitaldevika/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-            <a href="https://devikasadarbazaar.com/" target="_blank" class="btn-portal">Visit Project</a>
         </div>
     </nav>
 
